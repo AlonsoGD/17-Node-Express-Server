@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "express": "^4.16.4",
+    "node-fetch": "^2.2.0",
     "pug": "^2.0.3"
   },
   "devDependencies": {},

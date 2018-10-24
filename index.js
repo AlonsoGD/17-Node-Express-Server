@@ -9,8 +9,10 @@ let streamsData = []
 let my_middleware_function = function(req, res, next) {
   const URL = 'https://wind-bow.glitch.me/twitch-api/'
   const CHANNELS = ['tsm_myth', 'FreeCodeCamp', 'shroud', 'OgamingSC2', 'cretetion', 'storbeck', 'habathcx', 'RobotCaleb', 'noobs2ninjas']
+  streamsData = []
 
   for (let i = 0; i < CHANNELS.length; i++ ) {
+    
     fetch(URL + 'streams/' + CHANNELS[i])
       .then(response => response.json())
       .then(response => {
@@ -32,7 +34,7 @@ let my_middleware_function = function(req, res, next) {
 }
 
 let show_results = function(req, res, next) {
- res.send(streamsData);
+  res.send(streamsData);
 }
 
 app.get('/', (req, res) => {
@@ -43,6 +45,8 @@ app.get('/secret', function(req, res, next) {
   console.log('TEST Accessing the secret section ...');
   next(); // pass control to the next handler
 });
+
+app.use('/weather', express.static('public'));
 
 app.use('/wiki', wiki);
 app.use('/script', my_middleware_function);

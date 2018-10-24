@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- jQuery -->
+    <script rel="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Rammetto+One" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
+    <!-- File links -->
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="blayout">
+        <div class="weatherbox">
+            <div class="weatherbox__title" id="weatherLocation"></div>
+            <img class="img--responsive" id="weatherIcon" src="" alt="Weather representation icon">
+            <div class="weatherbox__wdescription"><span id="weather-text-id"></span></div>
+            <div class="information">
+                <table style="border-collapse:collapse">
+                    <tr>
+                        <td class="information__icon"><i class="fas fa-thermometer-three-quarters"></i></td>
+                        <td class="information__data"><span id="temp-id"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="information__icon">
+                            <div class="information_minmax"><span style="color: blue;">MIN</span> / <span style="color:red">MAX</span></div>
+                            <i class="fas fa-thermometer-three-quarters"></i>
+                        </td>
+                        <td class="information__data"><span>TEST</span></td>
+                    </tr>
+                    <tr>
+                        <td class="information__icon"><i class="fas fa-umbrella"></i></td>
+                        <td class="information__data"><span>TEST</span></td>
+                    </tr>
+                    <tr>
+                        <td class="information__icon information__icon--no_border_bottom"><img src="./desing/icons8-wind-50.png"></td>
+                        <td class="information__data information__data--no_border_bottom"><span>TEST</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+           
+        <div class="weatherbox">
+            <div class="weatherbox__title">FORECAST</div>
+            <div class="information information--forecast">
+                <table style="border-collapse:collapse">
+                    <tr>
+                        <th class="information__icon information__icon--no_background"></th>
+                        <th class="information__data information__data--no_width">DAY 1</th>
+                        <th class="information__data information__data--no_width">DAY 2</th>
+                        <th class="information__data information__data--no_width">DAY 3</th>
+                    </tr>
+                    <tr>
+                        <td class="information__icon"><i class="fas fa-info"></i></td>
+                        <td class="information__data information__data--no_width"><img class="img--responsive" id="" src="./img/01d.png" alt="Weather representation icon"></td>
+                        <td class="information__data information__data--no_width"><img class="img--responsive" id="" src="./img/01d.png" alt="Weather representation icon"></td>
+                        <td class="information__data information__data--no_width"><img class="img--responsive" id="" src="./img/01d.png" alt="Weather representation icon"></td>
+                    </tr>
+                    <tr>
+                        <td class="information__icon"><i class="fas fa-thermometer-three-quarters"></i></td>
+                        <td class="information__data information__data--no_width"><span>TEST</span></td>
+                        <td class="information__data information__data--no_width"><span>TEST</span></td>
+                        <td class="information__data information__data--no_width"><span>TEST</span></td>
+                    </tr>
+                    <tr>
+                        <td class="information__icon">
+                            <div class="information_minmax"><span style="color: blue;">MIN</span> / <span style="color:red">MAX</span></div>
+                            <i class="fas fa-thermometer-three-quarters"></i>
+                        </td>
+                        <td class="information__data information__data--no_width"><span>TEST</span></td>
+                        <td class="information__data information__data--no_width"><span>TEST</span></td>
+                        <td class="information__data information__data--no_width"><span>TEST</span></td>
+                    </tr>
+                    <tr>
+                        <td class="information__icon"><i class="fas fa-umbrella"></i></td>
+                        <td class="information__data information__data--no_width"><span>TEST</span></td>
+                        <td class="information__data information__data--no_width"><span>TEST</span></td>
+                        <td class="information__data information__data--no_width"><span>TEST</span></td>
+                    </tr>
+                    <tr>
+                        <td class="information__icon information__icon--no_border_bottom"><img src="./desing/icons8-wind-50.png"></td>
+                        <td class="information__data information__data--no_width information__data--no_border_bottom"><span>TEST</span></td>
+                        <td class="information__data information__data--no_width information__data--no_border_bottom"><span>TEST</span></td>
+                        <td class="information__data information__data--no_width information__data--no_border_bottom"><span>TEST</span></td>
+                    </tr>
+                </table>
+                
+            </div>
+        </div> 
+
+    <!-- <footer>
+        <div>Icons made by: <a href="https://d3stroy.deviantart.com/">d3stroy.devianart</a></div>
+        <a target="_blank" href="mailito:dani.alonso.garcia@gmail.com" data-toggle="tooltip" data-placement="top" title="dani.alonso.garcia@gmail.com"> <i class="fa fa-envelope fa-2x iconStyle" aria-hidden="true"></i></a>
+        <a target="_blank" href="https://github.com/AlonsoGD/07-FCC-project6-Weather-app" data-toggle="tooltip" data-placement="top" title="GitHub"> <i class="fa fa-github fa-2x iconStyle" aria-hidden="true"></i></a>
+    </footer> -->
+</body>
+</html>
